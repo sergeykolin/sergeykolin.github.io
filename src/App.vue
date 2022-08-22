@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar/>
+    <Dashboard/>
+    <FooterApp/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue';
+import FooterApp from './components/FooterApp.vue';
+import Dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Dashboard,
+    Navbar,
+    FooterApp,
+}
 }
 </script>
 
@@ -23,6 +28,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-image: url(https://static.tildacdn.com/tild3935-3535-4335-a333-383831323963/DubaiMapBlur.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  height: 100vh;
+  display: grid;
 }
 </style>
